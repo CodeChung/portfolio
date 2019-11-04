@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+
+<html lang='en'>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content='width=device-width, initial-scale=1.0' />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link
+            href='https://fonts.googleapis.com/css?family=Arvo|Muli&display=swap'
+            rel='stylesheet'
+        />
+        <link rel='stylesheet' href="./style.css" />
+        <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">
+        <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+        <title>CodeChung</title>
+    </head>
+
+    <body>
+        <div class="sun neon">
+            <img src='./images/facemagic.svg' alt='sun' />
+        </div>
+        <header>
+            <nav>
+                <div class="nav-closed">
+                    <h1>CodeChung</h1>
+                    <ul class='nav-links'>
+                        <li class="nav-button">Shop</li>
+                        <li class="nav-button" id="work-button">Work</li>
+                        <li class="nav-button" id='contact-button'>Contact</li>
+                        <li class="nav-button" id='about-button'>About</li>
+                    </ul>
+                </div>
+                <div class='nav-open-work' id='nav-open-work'>
+                    <div class="work-greeting">
+                        CodeChung Projects
+                    </div>
+                    <div class="projects">
+                        <div class="swiper-container">
+                            <!-- Additional required wrapper -->
+                            <div class="swiper-wrapper">
+                                <!-- Slides -->
+                                <div class="swiper-slide">
+                                    <div class="project-description">
+                                        <h2>FaceJams</h2>
+                                        <div class="project-card-block">
+                                            <img src='https://camo.githubusercontent.com/20deaa632599a11eec5c63194b4c6d3927b800c0/68747470733a2f2f736e6970626f6172642e696f2f696f756337622e6a7067' alt='facejams project' />
+                                        </div>
+                                        <div class="project-icons">
+                                            
+                                        </div>
+                                        <p>Find music with your face</p>
+                                        <button><a target="_blank" rel="noopener noreferrer" href='https://github.com/CodeChung/facemusic-client'>Code</a></button>
+                                        <button class="code-button"><a target="_blank" rel="noopener noreferrer" href='https://codechung-facejams-app.now.sh/'>Demo</a></button>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="project-description">
+                                        <h2>NoodleBox</h2>
+                                        <div class="project-card-block">
+                                            <img src='https://snipboard.io/7RCPhd.jpg' alt='noodlebox project' />
+                                        </div>
+                                        <div class="project-icons">
+                                            {icons}
+                                        </div>
+                                        <p>Yum, order noodles with NoodleBox</p>
+                                        <button><a target="_blank" rel="noopener noreferrer" href='https://github.com/CodeChung/noodlebox'>Code</a></button>
+                                        <button class="code-button"><a target="_blank" rel="noopener noreferrer" href='https://codechung.github.io/noodlebox/'>Demo</a></button>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="project-description">
+                                        <h2>Goala</h2>
+                                        <div class="project-card-block">
+                                            <img src='https://camo.githubusercontent.com/1399acb783de059d7dfc5e23a5abb56b3c63d64d/68747470733a2f2f736e6970626f6172642e696f2f6d547767576c2e6a7067' alt='goala project' />
+                                        </div>
+                                        <div class="project-icons">
+                                            {icons}
+                                        </div>
+                                        <p>Private goal tracking journal</p>
+                                        <button><a target="_blank" rel="noopener noreferrer" href='https://github.com/CodeChung/goala-client'>Code</a></button>
+                                        <button class="code-button"><a target="_blank" rel="noopener noreferrer" href='https://hc9825-goala-app.now.sh/'>Demo</a></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- If we need pagination -->
+                            <div class="swiper-pagination"></div>
+                        
+                            <!-- If we need navigation buttons -->
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                        
+                            <!-- If we need scrollbar -->
+                            <div class="swiper-scrollbar"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class='nav-open-about' id='nav-open-about'>
+                    <div class="card">
+                        <img src='./images/thumbnail.jpeg' alt='my face' />
+                        <div class="card-nav">
+                            <button class="card-front-end">Front End</button>
+                            <button class='card-back-end'>Back End</button>
+                            <button class="card-services">Services</button>
+                        </div>
+                        <div class="card-text">
+                            <ul class="card-list frontend-skills list-active">
+                                <li>React</li>
+                                <li>Enzyme Testing</li>
+                                <li>jQuery</li>
+                                <li>GatsbyJS</li>
+                                <li>HTML5</li>
+                                <li>CSS3</li>
+                                <li>Graphics</li>
+                                <li>SASS/SCSS</li>
+                                <li>BootStrap</li>
+                            </ul>
+                            <ul class="card-list backend-skills">
+                                <li>Node.js</li>
+                                <li>PostgresQL</li>
+                                <li>JWT Authentication</li>
+                                <li>REST APIs</li>
+                                <li>Mocha & Chai Testing</li>
+                                <li>Wordpress</li>
+                                <li>CMS (Contentful, Typo3, etc.)</li>
+                                <li>GraphQL</li>
+                            </ul>
+                            <ul class="card-list services">
+                                <li>Free Web Hosting</li>
+                                <li>Customized Websites</li>
+                                <li>Responsive Mobile Design</li>
+                                <li>User Friendly Backend</li>
+                                <li>Single Page Applications</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <p>
+                        Hi welcome to CodeChung, where the UI/UX is fresh and the code is clean. We're excited to have you here. My name is <b>Harry</b>, I'm the web architect of these lands.
+                        <br></br>
+                        CodeChung is a development shop that is excited about finding creative, impactful solutions that empower local businesses. Using today's trusted modern technologies including React and Node.js, we design websites for clients from scratch, focusing on quality and individuality.
+                        <br></br>
+                        Furthermore, with my own past experience in education, I pride myself in teaching clients the tools that they can use to quickly update their website from the comfort of their own homes. You can easily do it at your own convenience once we go over the steps together -- whether a custom Node.js API or a user-friendly CMS provider, we effectively discuss how to take advantage of our online technologies to improve the website experience. With my guidance, you will develop the keys to your own kingdom; no more waiting for simple picture and blog post updates and no more extraneous fees for minor changes. Now that's power to the people ✊.
+                        <br></br>
+                        In today's era of online marketing, it can be hard to find a way to differentiate yourself from others and truly find an online home where you can show the world who you are and what you do. I enjoy working one on one with business owners to find that unique, customized web experience that will leave a lasting impression on potential customers and connections.
+                    </p>
+                        
+                </div>
+                <div class='nav-open-contact' id='nav-open-contact'>
+                    <ul class='contact-list'>
+                        <li>
+                            <a 
+                                rel="noopener noreferrer"
+                                href='https://github.com/CodeChung' 
+                                target='_blank' aria-hidden={true} >
+                                <img src='./images/github.svg' alt="github" />
+                            </a>
+                            
+                        </li>
+                        <li>
+                            <a 
+                            rel="noopener noreferrer"
+                            href='https://www.linkedin.com/in/harry-h-chung/' 
+                            target='_blank' aria-hidden={true} >
+                                <img src='./images/linkedin.svg' alt='linkedin' />
+                            </a>
+                        </li>
+                        <li>
+                            <a rel="noopener noreferrer" 
+                                href='mailto:hc9825@gmail.com' 
+                                target='_blank' aria-hidden={true} >
+                                <img src='./images/mail.svg' alt="email" />
+                            </a>
+                        </li>
+                    </ul>                  
+                </div>
+                <div class="nav-open">
+                    <div class="clothing">
+                        <h2>Websites</h2>
+                        <ul>
+                            <li><a href='#'>Business Sites</a></li>
+                            <li><a href='#'>Blogs</a></li>
+                            <li><a href='#'>Web Stores</a></li>
+                            <li><a href='#'>Personal Pages</a></li>
+                        </ul>
+                    </div>
+                    <div class="nav-images">
+                        <img id='biz' src='./images/meeting.jpeg' alt='meeting' />
+                        <img src='./images/hats.jpeg' alt='hat' />
+                    </div>
+                </div>
+                <div class="nav-open">
+                    <div class="clothing">
+                        <h2>Websites</h2>
+                        <ul>
+                            <li><a href='#'>Business Sites</a></li>
+                            <li><a href='#'>Blogs</a></li>
+                            <li><a href='#'>Web Stores</a></li>
+                            <li><a href='#'>Personal Pages</a></li>
+                        </ul>
+                    </div>
+                    <div class="nav-images">
+                        <img id='biz' src='./images/meeting.jpeg' alt='meeting' />
+                        <img src='./images/hats.jpeg' alt='hat' />
+                    </div>
+                </div>
+            </nav>
+            <img class='cover' src='./images/3042.jpg' alt='cover' />
+            <h1 class="cover-date">03/03/2019</h1>
+        </header>
+
+        <footer>
+            <section class="animation">
+                <button class="rollerbladers">
+                    <div class="screen"><img src='./images/logo.png' alt='logo' /></div>
+                    <img src='./images/rollerbladers_long.png' alt='rollerblades' />
+                </button>
+            </section>
+        </footer>
+
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TimelineLite.min.js'></script>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/plugins/CSSPlugin.min.js'></script>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenLite.min.js'></script>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js'></script>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/debug.addIndicators.min.js'></script>
+        <script src="https://unpkg.com/swiper/js/swiper.js"></script>
+        <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+        <script src="https://unpkg.com/feather-icons"></script>
+        <script src='https://code.jquery.com/jquery-3.4.1.slim.min.js'
+            integrity='sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8='
+            crossorigin='anonymous'
+        ></script>
+        <script src='app.js'></script>
+    </body>
+</html>
